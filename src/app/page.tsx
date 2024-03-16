@@ -5,7 +5,6 @@ import { signFrameAction, FarcasterSigner } from "frames.js/render/farcaster";
 import { FrameImageNext } from "frames.js/render/next";
 import { useFrame } from "frames.js/render/use-frame";
 
-console.log(process.env.NEXT_PUBLIC_PRIVATE_KEY);
 export default function Page() {
   const farcasterSigner: FarcasterSigner = {
     fid: 1,
