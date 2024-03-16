@@ -31,7 +31,7 @@ export default function Page() {
   });
 
   return (
-    <div className="w-[400px]">
+    <div className="w-[400px]" style={{ width: "400px" }}>
       <FrameUI frameState={frameState} theme={{}} FrameImage={FrameImageNext} />
     </div>
   );
