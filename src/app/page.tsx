@@ -5,13 +5,13 @@ import { signFrameAction, FarcasterSigner } from "frames.js/render/farcaster";
 import { FrameImageNext } from "frames.js/render/next";
 import { useFrame } from "frames.js/render/use-frame";
 
+console.log(process.env.NEXT_PUBLIC_PRIVATE_KEY);
 export default function Page() {
   const farcasterSigner: FarcasterSigner = {
     fid: 1,
     status: "approved",
     publicKey: "0x829510E9b6a3b6e8DCf906e846d3bFB6B9FB1D89",
-    privateKey:
-      "0x67633be8c32db5414951db4a9ea9734b1214f8f5ca15d6b16818c0b4ee864653",
+    privateKey: process.env.NEXT_PUBLIC_PRIVATE_KEY,
   };
 
   const frameState = useFrame({
